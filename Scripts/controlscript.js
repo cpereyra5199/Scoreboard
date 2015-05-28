@@ -219,7 +219,7 @@ $(document).on('click','#resetclock',function(){
 $(document).on('click','#set,#setmobile',function(){
 	
 	var id = $(this).attr('id');
-	alert(id);
+	
 	if(id=="set"){
 	
 	var time = Number($("#minutes").val()*60)+Number($("#seconds").val());
