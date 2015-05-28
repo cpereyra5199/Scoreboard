@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no" />
+<title>KSA Indoor Soccer League</title>
+
+<link href='CSS/fontstyle.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="CSS/bootstrap.min.css">
+<link rel="stylesheet" href="CSS/bootstrap-theme.min.css">
+<script src="Scripts/jquery.min.js"></script>
+<script src="Scripts/bootstrap.min.js"></script>
+<link href="CSS/controlstyle.css" type="text/css" rel="stylesheet">
+<script src="Scripts/controlscript.js"></script>
+</head>
+
+<div class="mobilecontrol">
+
+<div class="form-group text-center margin-top1">
+
+<select class="form-control floatleft" id="minutesmobile">
+<option value="0">00</option>
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+<option value="41">41</option>
+<option value="42">42</option>
+<option value="43">43</option>
+<option value="44">44</option>
+<option value="45">45</option>
+<option value="46">46</option>
+<option value="47">47</option>
+<option value="48">48</option>
+<option value="49">49</option>
+<option value="50">50</option>
+<option value="51">51</option>
+<option value="52">52</option>
+<option value="53">53</option>
+<option value="54">54</option>
+<option value="55">55</option>
+<option value="56">56</option>
+<option value="57">57</option>
+<option value="58">58</option>
+<option value="59">59</option>
+<option value="60">60</option>
+<option value="61">61</option>
+<option value="62">62</option>
+<option value="63">63</option>
+<option value="64">64</option>
+<option value="65">65</option>
+<option value="66">66</option>
+<option value="67">67</option>
+<option value="68">68</option>
+<option value="69">69</option>
+<option value="70">70</option>
+<option value="71">71</option>
+<option value="72">72</option>
+<option value="73">73</option>
+<option value="74">74</option>
+<option value="75">75</option>
+<option value="76">76</option>
+<option value="77">77</option>
+<option value="78">78</option>
+<option value="79">79</option>
+<option value="80">80</option>
+<option value="81">81</option>
+<option value="82">82</option>
+<option value="83">83</option>
+<option value="84">84</option>
+<option value="85">85</option>
+<option value="86">86</option>
+<option value="87">87</option>
+<option value="88">88</option>
+<option value="89">89</option>
+<option value="90">90</option>
+<option value="91">91</option>
+<option value="92">92</option>
+<option value="93">93</option>
+<option value="94">94</option>
+<option value="95">95</option>
+<option value="96">96</option>
+<option value="97">97</option>
+<option value="98">98</option>
+<option value="99">99</option>
+</select>
+
+<select class="form-control floatleft" id="secondsmobile">
+<option value="0">00</option>
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+<option value="41">41</option>
+<option value="42">42</option>
+<option value="43">43</option>
+<option value="44">44</option>
+<option value="45">45</option>
+<option value="46">46</option>
+<option value="47">47</option>
+<option value="48">48</option>
+<option value="49">49</option>
+<option value="50">50</option>
+<option value="51">51</option>
+<option value="52">52</option>
+<option value="53">53</option>
+<option value="54">54</option>
+<option value="55">55</option>
+<option value="56">56</option>
+<option value="57">57</option>
+<option value="58">58</option>
+<option value="59">59</option>
+</select>
+
+</div>
+
+<div class="text-center">
+<button class="link btn-lg btn-success width-btn" id="setmobile">Set</button>
+<button class="link btn-lg btn-danger width-btn" id="resetclock">Reset</button>
+<button class="link btn-lg btn-success width-btn" id="startclock">Start</button>
+<button class="link btn-lg btn-danger width-btn" id="stopclock">Stop</button>
+<button class="link btn-lg btn-warning width-btn sethalf" style="width:65px!important;" data-half="1">1st</button><button data-half="2" style="width:65px!important;" class="link btn-lg btn-warning width-btn sethalf">2nd</button>
+<button class="link btn-lg btn-danger width-btn" id="buzzer">Buzzer</button>
+</div>
+<div class="form-group floatleft">
+
+<input type="text" class="form-control emblemurl" id="team1namemobile" placeholder="Team 1"/>
+
+<div class="clear margin1"></div>
+<select class="form-control emblemdrop" id="team1emblemmobile"></select>
+
+</div>
+
+<div class="form-group floatleft">
+
+<input type="text" class="form-control emblemurl" id="team2namemobile" placeholder="Team 2"/>
+
+<div class="clear margin1"></div>
+
+<select class="form-control emblemdrop" id="team2emblemmobile"></select>
+
+</div>
+
+<div class="text-center sectiontitle"><span class="font2">Goals</span></div>
+
+<div class="text-center floatleft">
+<button class="goal link btn-lg btn-warning btn-xlg"  data-team-id="1" data-up-down="-">-</button>
+<button class="goal link btn-lg btn-success btn-xlg"  data-team-id="1" data-up-down="+">+</button>
+</div>
+
+<div class="text-center floatleft">
+<button class="goal link btn-lg btn-warning btn-xlg" data-team-id="2" data-up-down="-">-</button>
+<button class="goal link btn-lg btn-success btn-xlg" data-team-id="2" data-up-down="+">+</button>
+</div>
+
+<div class="text-center sectiontitle"><span class="font2">Fouls</span></div>
+
+<div class="text-center floatleft">
+<button class="fouls link btn-lg btn-warning btn-xlg"  data-team-id="1" data-up-down="-">-</button>
+<button class="fouls link btn-lg btn-success btn-xlg"  data-team-id="1" data-up-down="+">+</button>
+</div>
+
+<div class="text-center floatleft">
+<button class="fouls link btn-lg btn-warning btn-xlg" data-team-id="2" data-up-down="-">-</button>
+<button class="fouls link btn-lg btn-success btn-xlg" data-team-id="2" data-up-down="+">+</button>
+</div>
+
+</div>
+
+
+<div>
+
+<div class="form-group timesection">
+
+<div class="text-center link sectiontitle"><span class="font3">Clock</span></div>
+
+<section class="hidden">
+
+<div class="form-group text-center margin-top1">
+
+<select class="form-control floatleft" id="minutes">
+<option value="0">00</option>
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+<option value="41">41</option>
+<option value="42">42</option>
+<option value="43">43</option>
+<option value="44">44</option>
+<option value="45">45</option>
+<option value="46">46</option>
+<option value="47">47</option>
+<option value="48">48</option>
+<option value="49">49</option>
+<option value="50">50</option>
+<option value="51">51</option>
+<option value="52">52</option>
+<option value="53">53</option>
+<option value="54">54</option>
+<option value="55">55</option>
+<option value="56">56</option>
+<option value="57">57</option>
+<option value="58">58</option>
+<option value="59">59</option>
+<option value="60">60</option>
+<option value="61">61</option>
+<option value="62">62</option>
+<option value="63">63</option>
+<option value="64">64</option>
+<option value="65">65</option>
+<option value="66">66</option>
+<option value="67">67</option>
+<option value="68">68</option>
+<option value="69">69</option>
+<option value="70">70</option>
+<option value="71">71</option>
+<option value="72">72</option>
+<option value="73">73</option>
+<option value="74">74</option>
+<option value="75">75</option>
+<option value="76">76</option>
+<option value="77">77</option>
+<option value="78">78</option>
+<option value="79">79</option>
+<option value="80">80</option>
+<option value="81">81</option>
+<option value="82">82</option>
+<option value="83">83</option>
+<option value="84">84</option>
+<option value="85">85</option>
+<option value="86">86</option>
+<option value="87">87</option>
+<option value="88">88</option>
+<option value="89">89</option>
+<option value="90">90</option>
+<option value="91">91</option>
+<option value="92">92</option>
+<option value="93">93</option>
+<option value="94">94</option>
+<option value="95">95</option>
+<option value="96">96</option>
+<option value="97">97</option>
+<option value="98">98</option>
+<option value="99">99</option>
+</select>
+
+<select class="form-control floatleft" id="seconds">
+<option value="0">00</option>
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+<option value="41">41</option>
+<option value="42">42</option>
+<option value="43">43</option>
+<option value="44">44</option>
+<option value="45">45</option>
+<option value="46">46</option>
+<option value="47">47</option>
+<option value="48">48</option>
+<option value="49">49</option>
+<option value="50">50</option>
+<option value="51">51</option>
+<option value="52">52</option>
+<option value="53">53</option>
+<option value="54">54</option>
+<option value="55">55</option>
+<option value="56">56</option>
+<option value="57">57</option>
+<option value="58">58</option>
+<option value="59">59</option>
+</select>
+
+</div>
+
+<div class="text-center">
+<div>
+<button class="link btn-lg btn-success width-btn" id="set">Set</button>
+<button class="link btn-lg btn-danger width-btn" id="resetclock">Reset</button>
+</div>
+
+<div>
+<button class="link btn-lg btn-success width-btn" id="startclock">Start</button>
+<button class="link btn-lg btn-danger width-btn" id="stopclock">Stop</button>
+
+</div>
+
+<div>
+<button class="link btn-lg btn-warning width-btn sethalf" data-half="1">1st</button><button data-half="2" class="link btn-lg btn-warning width-btn sethalf">2nd</button>
+<button class="link btn-lg btn-danger width-btn" id="buzzer">Buzzer</button>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+
+<div class="form-group teamsection">
+
+<div class="text-center link sectiontitle"><span class="font3">Teams</span></div>
+
+<section class="hidden">
+
+<div class="text-center">
+<div class="floatleft"><span class="font2">HOME</span></div>
+<div class="floatleft"><span class="font2">AWAY</span></div>
+</div>
+
+<div class="form-group">
+
+<div class="form-group floatleft">
+
+<input type="text" class="form-control emblemurl" id="team1name" placeholder="Team 1"/>
+
+<div class="clear margin1"></div>
+<select class="form-control emblemdrop" id="team1emblem"></select>
+
+</div>
+
+<div class="form-group floatleft">
+
+<input type="text" class="form-control emblemurl" id="team2name" placeholder="Team 2"/>
+
+<div class="clear margin1"></div>
+
+<select class="form-control emblemdrop" id="team2emblem"></select>
+
+</div>
+
+<div class="clear"></div>
+
+<div class="text-center"><button class="link btn-lg btn-success width-btn" id="set">Set</button></div>
+
+</div>
+
+</section>
+
+</div>
+
+
+<div class="form-group goalsection">
+
+<div class="text-center link sectiontitle"><span class="font3">Goals</span></div>
+
+<section class="hidden">
+
+<div class="text-center">
+<div class="floatleft"><span class="font2">HOME</span></div>
+<div class="floatleft"><span class="font2">AWAY</span></div>
+</div>
+
+<div>
+<div class="text-center floatleft">
+<button class="goal link btn-lg btn-warning btn-xlg"  data-team-id="1" data-up-down="-">-</button>
+<button class="goal link btn-lg btn-success margin1 btn-xlg"  data-team-id="1" data-up-down="+">+</button>
+</div>
+
+<div class="text-center floatleft">
+<button class="goal link btn-lg btn-warning btn-xlg" data-team-id="2" data-up-down="-">-</button>
+<button class="goal link btn-lg btn-success margin1 btn-xlg" data-team-id="2" data-up-down="+">+</button>
+</div>
+</div>
+
+
+</div>
+
+</section>
+
+<div class="form-group foulsection">
+
+<div class="text-center link sectiontitle"><span class="font3">Fouls</span></div>
+
+
+<section class="hidden">
+
+<div class="text-center">
+<div class="floatleft"><span class="font2">HOME</span></div>
+<div class="floatleft"><span class="font2">AWAY</span></div>
+</div>
+
+<div>
+<div class="text-center floatleft">
+<button class="fouls link btn-lg btn-warning btn-xlg"  data-team-id="1" data-up-down="-">-</button>
+<button class="fouls link btn-lg btn-success margin1 btn-xlg"  data-team-id="1" data-up-down="+">+</button>
+</div>
+
+<div class="text-center floatleft">
+<button class="fouls link btn-lg btn-warning btn-xlg" data-team-id="2" data-up-down="-">-</button>
+<button class="fouls link btn-lg btn-success margin1 btn-xlg" data-team-id="2" data-up-down="+">+</button>
+</div>
+</div>
+
+<!--<div class="text-center"><button class = "link btn-lg btn-danger" id="resetfouls">Reset Fouls</button></div>-->
+
+</section>
+
+</div>
+
+
+
+
+</div>
+

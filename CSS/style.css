@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+
+
+html, body{
+
+font-family: 'Open Sans', sans-serif!important;
+
+}
+
+html { 
+  background: url(../Images/background.jpg)no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.faltas{
+
+  position: absolute;
+  font-size: 208px;
+  color: lime;
+  top: 55%;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-family: 'Exo 2', sans-serif;
+  text-align: center;
+  width: 100%;
+
+}
+
+.teamname{
+line-height:1;
+text-transform: uppercase;
+font-size:100px;
+font-weight:900;
+font-family: 'Titillium Web', sans-serif;
+-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+-webkit-text-stroke-width: 3px;
+ -webkit-text-stroke-color: black;
+ position:absolute;
+ width:100%;
+ word-break: break-word;
+
+}
+
+.teamsection{
+
+position:absolute;
+width:24%;
+text-align:center;
+top:15%;
+
+
+}
+
+.teamsection img{
+
+width:70%;
+margin-top:48%;
+
+}
+
+.teamemblemleft{
+
+left:0;
+
+}
+
+.teamemblemright{
+
+right:0;
+
+}
+
+.teamname1{
+
+left:0;
+width:160%;
+
+}
+
+.teamname2{
+
+right:0;
+width:160%;
+
+}
+
+.score{
+
+font-family: 'Orbitron', sans-serif;
+font-size:260px;
+font-weight:bold;
+color: white;
+-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+-webkit-text-stroke-width: 5px;
+ -webkit-text-stroke-color: black;
+
+}
+
+.timer{
+
+  position: absolute;
+  color: white;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: black;
+  top: 53%;
+  left: 47.8%;
+  transform: translate(-50%, -50%);
+  font-family: 'Orbitron', sans-serif;
+
+}
+
+/*overrides*/
+.flip-clock-label{
+
+display:none!important;
+
+}
+
+.flip-clock-wrapper .flip{
+
+border: solid 1px rgba(242, 222, 16, .5)!important;
+
+}
+
+.flip-clock-wrapper ul li a div div.inn{
+
+color:red!important;
+font-family: 'Black Ops One', cursive!important;
+font-weight:lighter!important;
+background-color:black!important;
+
+}
+
+.flip-clock-dot{
+
+background:red!important;
+
+}
+
+.flip-clock-wrapper{
+
+zoom:3.2;
+
+}
+
+.clear{
+
+clear:both;
+
+}
+
+.margin300{
+
+margin:150px;
+
+}
+
+#faltasteam1{
+
+position: absolute;
+  top: 60%;
+  left: 31%;
+
+}
+
+#faltasteam2{
+
+    position: absolute;
+  top: 60%;
+  right: 30.5%;
+}
+
+.faltasseperator{
+
+position: absolute;
+  top: 60%;
+  left:48%;
+
+}
+
+.faltasborder{
+
+top:68%;
+border:1px solid lime;
+border-radius:20px;
+width:48.5%;
+height:300px;
+position:absolute;
+left:26%;
+
+}
+
+.half{
+
+/*position:absolute;
+font-family:'Orbitron', sans-serif;
+color:lime;
+font-size:120px;
+width:100%;
+text-align:center;
+top:24%;*/
+
+  position: absolute;
+  font-family: 'Orbitron', sans-serif;
+  color: lime;
+  font-size: 80px;
+  width: 100%;
+  text-align: center;
+  top: 27%;
+
+}
+

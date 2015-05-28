@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Exo 2'), local('Exo2-Regular'), url(http://localhost:81/ksa/fonts/exo1.woff) format('woff');
+}
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Exo 2 Extra Bold'), local('Exo2-ExtraBold'), url(http://localhost:81/ksa/fonts/exo2.woff) format('woff');
+}
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Exo 2 Black'), local('Exo2-Black'), url(http://localhost:81/ksa/fonts/exo3.woff) format('woff');
+}
+@font-face {
+  font-family: 'Exo 2';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Exo 2 Extra Bold Italic'), local('Exo2-ExtraBoldItalic'), url(http://localhost:81/ksa/fonts/exo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Exo 2';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Exo 2 Black Italic'), local('Exo2-BlackItalic'), url(http://localhost:81/ksa/fonts/exo5.woff) format('woff');
+}
