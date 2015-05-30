@@ -16,10 +16,49 @@ $(document).ready(function(){
 			$('<option value="'+this.ID+'">'+this.Name+'</option>').appendTo($(".emblemdrop")); 
 
 		});
+		
+		SetTeam();
 		 
 	 });
 
 });
+
+function SetTeam(){
+	
+	$.ajax({
+		 type: "GET",
+		 cache: 0,
+		 url:"Data/Data.php",
+		 data:{
+			 LoadTeams:1
+		 },
+	 }).done(function(data){
+		 
+		var teams = JSON.parse(data);
+		
+		if (teams[0].Name !=""){
+			
+			$("#team1name").val(teams[0].Name);
+			$("#team1name").blur();
+			
+			$("#team1namemobile").val(teams[0].Name);
+			$("#team1namemobile").blur();
+			
+		}
+		
+		if (teams[1].Name !=""){
+			
+			$("#team2name").val(teams[1].Name);
+			$("#team2name").blur();
+			
+			$("#team2namemobile").val(teams[1].Name);
+			$("#team2namemobile").blur();
+		}
+		 
+	 });
+	
+	
+}
 
 $(document).on("click",".sectiontitle",function(){
 	
@@ -225,6 +264,7 @@ $(document).on('click','#set,#setmobile',function(){
 	var time = Number($("#minutes").val()*60)+Number($("#seconds").val());
 
 	var team1name = $("#team1name").val();
+	
 	var team2name = $("#team2name").val();
 	
 	var emblemid1= $("#team1emblem").val();

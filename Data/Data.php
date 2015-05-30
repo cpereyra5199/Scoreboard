@@ -45,6 +45,11 @@ ResetTime();
 	
 	GetEmblems();
 	
+}else if (isset($_GET["GetEmblemsFull"])){
+	
+    GetEmblemsFull();
+	
+	
 }else if (isset($_GET["ActivateBuzzer"])){
 	
 	ActivateBuzzer();
@@ -55,11 +60,46 @@ ResetTime();
 	SetHalf($_GET["SetHalf"]);
 	
 	
+}else if (isset($_GET["LoadTeams"])){
+	
+	LoadTeams();
+	
+}else if (isset($_GET["DeleteEmblem"])){
+	
+	DeleteEmblem($_GET["DeleteEmblem"]);
+	
 }
 else{
 	
 		
 	RefreshSession();
+	
+}
+
+function LoadTeams(){
+	
+	mysql_connect($GLOBALS['hostname'], $GLOBALS['username'], $GLOBALS['password']) OR DIE("Unable to connect to database! Please try again later.");
+	mysql_select_db($GLOBALS['dbname']);
+	mysql_query('SET NAMES utf8');
+	$query = "select Name, EmblemID from `session_team`";
+	
+	$result = mysql_query($query);
+    
+    $stack = array();    
+    
+    while ($row = mysql_fetch_array($result)) {
+			
+		$arr = array(
+		"Name"=>$row["Name"],
+		"EmblemID"=>$row["EmblemID"]);
+		
+		array_push($stack, $arr);
+
+	}
+	
+
+	echo(json_encode($stack));  
+	
 	
 }
 
@@ -143,6 +183,7 @@ function SetWatch($seconds,$team1,$team2,$emblemid1,$emblemid2){
 	
 	mysql_connect($GLOBALS['hostname'], $GLOBALS['username'], $GLOBALS['password']) OR DIE("Unable to connect to database! Please try again later.");
 	mysql_select_db($GLOBALS['dbname']);
+	mysql_query('SET NAMES utf8');
 	
 	$query= 'update `session` set IsReset=1, Running = 0, StartTime = "00:00:00", StoppedTime="00:00:00", IsDirty=1, GameTime='.$seconds;
 	mysql_query($query);
@@ -311,6 +352,64 @@ function GetEmblems(){
 	}
 	
 	echo(json_encode($stack));            
+	
+}
+
+function GetEmblemsFull(){
+	
+	mysql_connect($GLOBALS['hostname'], $GLOBALS['username'], $GLOBALS['password']) OR DIE("Unable to connect to database! Please try again later.");
+	mysql_select_db($GLOBALS['dbname']);
+	mysql_query('SET NAMES utf8');
+	$query = "select ID,Name,Url from `emblemlookup` order by Name ASC";   
+	
+	$result = mysql_query($query);
+    
+    $stack = array();    
+    
+    while ($row = mysql_fetch_array($result)) {
+			
+		
+		$arr = array(
+		"ID"=>$row["ID"],
+		"Name"=>$row["Name"],
+		"Url"=>$row["Url"]);
+		
+		array_push($stack, $arr);
+
+	}
+	
+	echo(json_encode($stack));            
+	
+	
+}
+
+function InsertImage($url,$name){
+	
+	mysql_connect($GLOBALS['hostname'], $GLOBALS['username'], $GLOBALS['password']) OR DIE("Unable to connect to database! Please try again later.");
+	mysql_select_db($GLOBALS['dbname']);
+	
+	$query="INSERT INTO `emblemlookup` (`ID`, `Url`, `Name`) VALUES (NULL, '".$url."', '".$name."')";
+	mysql_query($query);
+	
+	
+}
+
+function DeleteEmblem($id){
+	
+	mysql_connect($GLOBALS['hostname'], $GLOBALS['username'], $GLOBALS['password']) OR DIE("Unable to connect to database! Please try again later.");
+	mysql_select_db($GLOBALS['dbname']);
+	
+	
+	$query = "select Url from `emblemlookup` where ID = ".$id;
+	$result = mysql_query($query);
+		
+	$url = mysql_result($result,0,"Url");
+	
+	$query = "delete from `emblemlookup` where ID=".$id;
+	mysql_query($query);
+	
+	unlink("../".$url);
+	
 	
 }
 

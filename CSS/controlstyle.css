@@ -2,6 +2,18 @@
 @charset "utf-8";
 
 
+ul{
+          padding:0 0 0 0;
+          margin:0 0 0 0;
+      }
+      ul li {     
+          list-style:none;
+          margin-bottom:25px;           
+      }
+      ul li img {
+         // width:40%;
+      }
+
 html { 
   background: url(../Images/backgroundcontrol.jpg)repeat center center fixed; 
   -webkit-background-size: cover;
@@ -19,7 +31,7 @@ font-family: 'Open Sans', sans-serif!important;
 
 h2,h3,span{
 
-color:white;
+color:white!important;
 
 }
 
@@ -121,6 +133,13 @@ margin:10px;
 
 @media (max-width:400px){
 
+
+ .ajax-upload-dragdrop, .ajax-file-upload-statusbar{
+ 
+width:90%!important;
+
+ }
+
 .timesection,.teamsection,.goalsection,.foulsection{
 
 display:none;
@@ -152,3 +171,37 @@ display:none;
 }
 
 }
+
+.itemimage {
+  height: 100%;
+  max-height: 500px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+ .imageholder{
+ text-align:center;
+ position:relative;
+ 
+ }
+ 
+ 
+ .emblems{
+ 
+ text-align:center;
+ width:80%;
+ margin-left:auto;
+ margin-right:auto;
+ 
+ }
+ 
+ 
+ .ajax-upload-dragdrop, .ajax-file-upload-statusbar{
+ 
+ margin-left:auto!important;
+ margin-right:auto!important;
+
+ }
+ 
+ 
